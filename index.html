@@ -9,7 +9,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/Main_data.loader.js"></script>
+    <script src="./Build/Main_data.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -28,10 +28,10 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Main_data.data",
-        frameworkUrl: "Build/Main_data.framework.js",
-        codeUrl: "Build/Main_data.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+        dataUrl: "./Build/Main_data.data",
+        frameworkUrl: "./Build/Main_data.framework.js",
+        codeUrl: "./Build/Main_data.wasm",
+        streamingAssetsUrl: "./StreamingAssets",
         companyName: "DefaultCompany",
         productName: "oorinver3",
         productVersion: "1.0",
